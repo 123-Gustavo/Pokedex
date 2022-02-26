@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+
+.main{
+    margin: 20px auto;
+    max-width: 1100px;
+    background-color: #b8b8b885;
+    padding: 30px 2%;
+}
+
+.main h2{
+    font-size: 45px;
+    color: #ef5350;
+    text-align: center;
+}
+
+.pokemon-boxes{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokemon-box{
+    border-radius: 10px;
+    width: 29%;
+    margin: 20px 2%;
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+.pokemon-box img{
+    width: 100%;
+}
+
+.pokemon-box p{
+    color: black;
+    font-size: 21px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main .infos{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img, 
+.info{
+    width: 50%;
+}
+
+.img{
+    border-right: 1px solid rgb(133, 133, 133);
+}
+
+.img .imagem{
+    width: 75%;
+    margin: 40px 40px;
+    background-color: rgba(151, 151, 151, 0.842);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.img .imagem img{
+    width: 100%;
+}
+
+.informacoes{
+    width: 75%;
+    margin: 20px 40px;
+    padding: 5px;
+}
+
+.informacoes h3{
+    margin-top: 10px;
+    font-size: 17pt;
+}
+
+.informacoes p{
+    margin-top: 5px;
+    width: 75%;
+    background-color: rgba(167, 167, 167, 0.507);
+    padding: 10px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.informacoes select{
+    width: 75%;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 13pt;
+}
+
+.informacoes .result{
+    width: 75%;
+    height: 100px;
+    overflow: auto;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: white;
+    border: 1px solid rgba(109, 109, 109, 0.5);
+}
+
+.botao{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+
+.botao button{
+    padding: 5px 10px 5px 10px;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgba(73, 73, 73, 0.63);
+    font-size: 20pt;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.botao button:hover{
+    background-color: rgba(73, 73, 73, 0.767);
+}
+
+.botao button i{
+    padding: 0 10px;
+    font-size: 20pt;
+    cursor: pointer;
+    color: white;
+}
+
+.img .slider-pokemon{
+    display: flex;
+    margin: 0 25px;
+    padding: 5px 0;
+}
+
+.img .slider-pokemon img{
+    margin-right: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.466);
+    cursor: pointer;
+    box-shadow: 1px 1px 7px rgba(48, 48, 48, 0.514);
+}
+
+.infos .img .slider-pokemon .selected{
+    border: 3px solid rgba(0, 0, 0, 0.719);
+}
+
+label{
+    display: inline-block;
+    width: 3%;
+    font-size: 17pt;
+    cursor: pointer;
+    color: #4d4d4da4;
+}
+
+.pesquisa{
+    display: inline-block;
+}
+
+.mode-alternete{
+    position: absolute;
+    top: 90%;
+    left: 95%;
+    display: flex;
+}
+
+.mode-alternete h1{
+    font-size: 40pt;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+}
+
+.mode-alternete h1.active{
+    display: block;
+}
+
+.mode-alternete h1.unactive{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .pokemon-box{width:100%;text-align: center;}
+    .pokemon-box img{
+        max-width: 300px;
+    }
+
+    .img,.info{
+        width: 100%;
+    }
+
+    .img{
+        border-right: none;
+        border-bottom: 1px solid rgb(133, 133, 133);
+    }
+    
+    .img .imagem{
+        width: 85%;
+        margin: 20px 40px;
+        background-color: gray;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .img .imagem img{
+        width: 100%;
+    }
+ 
+    .informacoes{
+        width: 75%;
+        margin: 20px 100px;
+        padding: 3px;
+    }
+    
+    .informacoes h3{
+        margin-top: 10px;
+        font-size: 17pt;
+    }
+    
+    .informacoes p{
+        margin-top: 5px;
+        width: 75%;
+        background-color: rgba(167, 167, 167, 0.438);
+        padding: 10px;
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 0.671);
+    }
+    
+    .informacoes select{
+        width: 75%;
+        padding: 5px;
+        margin-top: 5px;
+        font-size: 13pt;
+    }
+    
+    .informacoes .result{
+        width: 75%;
+        height: 100px;
+        overflow: auto;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        background-color: white;
+        border: 1px solid rgba(109, 109, 109, 0.5);
+    }
+    
+    
+    .img .slider-pokemon{
+        display: flex;
+        margin: 0 10px;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .img .slider-pokemon img{
+        margin-right: 3px;
+        border: 2px solid rgba(0, 0, 0, 0.466);
+        cursor: pointer;
+        box-shadow: 1px 1px 7px rgba(48, 48, 48, 0.568);
+        max-width: 300px;
+    }
+
+    .infos .img .slider-pokemon .selected{
+        border: 3px solid rgba(0, 0, 0, 0.719);
+    }
+
+    .main{
+        margin: 20px auto;
+        max-width: 768px;
+        width:100%;
+        background-color: white;
+        padding: 25px 2%;
+    }
+}

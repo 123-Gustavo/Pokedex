@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <h2><img src="http://4.bp.blogspot.com/-Wb_3NzXcO5c/VGv5sR3M7UI/AAAAAAAAh3w/ciwMZiICmF0/s1600/pokemon-logo-em-png-queroimagem-cei%C3%A7a-crispim-01.png" ></h2>
+        <br/>
+        <label for="quantidade"><i class="fa fa-undo"></i></label><input class="quantidade" id="quantidade" name="quantidade" style="width: 97%; height: 40px; padding-left: 10px;" type="number" name="quantidade" placeholder="Insira a quantidade de pokemons...">
+        <label for="pesquisa"><i class="fa fa-search"></i></label><input class="pesquisa" id="pesquisa" name="pesquisa" style="width: 97%; height: 40px; margin-top: 5px; padding-left: 10px;" type="text" name="pesquisa" placeholder="Insira o nome do pokemon...">
+        <div class="pokemon-boxes"></div><!--Pokemon boxes-->
+        <div class="infos"></div>
+        <div class="mode-alternete">
+            <h1 id="off" class="active btn"><i class="fa fa-toggle-off"></i></h1>
+            <h1 id="on" class="unactive btn"><i class="fa fa-toggle-on"></i></h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
